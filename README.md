@@ -14,9 +14,9 @@ python main.py tracking --exp_id wpafb --dataset wpafb --custom_dataset_ann_path
 This will save trained models in exp/tracking/wpafb/ directory at 20,40,60,80 epochs and also the code saves a model_last.pth file after every epoch.
 
 ## Testing Code
-Testing is done using **demo_AOI.py** and **demo.py** files located in training_code/CenterTrack/src to generate the detection .txt files. Make sure to put appropritate test image width and height. Also, replace trained model path and demo sequence paths. Run the file using the command:
+Our trained model is available at [Google Drive](https://drive.google.com/file/d/1IZDsHhLbWzLZyd_dy7oBUdtCdNVTn5BE/view?usp=sharing). Testing is done using **demo_AOI.py** and **demo.py** files located in training_code/CenterTrack/src to generate the detection .txt files. Make sure to put appropritate test image width and height. Also, replace trained model path and demo sequence paths.  Run the file using the command:
 ~~~
-python demo_AOI.py tracking --num_classes 2 --demo /home/casper/Desktop/MovingObjDetector-WAMI.matlab/AOI/AOI_01 --load_model ../exp/tracking/crops_vids_1/model_last.pth --input_h 1216 --input_w 1216 --pre_hm --ltrb_amodal --track_thresh 0.4 --pre_thresh 0.5
+python demo_AOI.py tracking --num_classes 2 --demo /home/casper/Desktop/MovingObjDetector-WAMI.matlab/AOI/AOI_01 --load_model ../exp/tracking/wpafb/model_epoch75.pth --input_h 1216 --input_w 1216 --pre_hm --ltrb_amodal --track_thresh 0.4 --pre_thresh 0.5
 ~~~
 Final testing results of Avg. Precision, Avg. Recall and F1 score are generated using **evaluate_python_results.m**. We choose these three evaluation metrics to make a fair comparison with the results of [WAMI paper](https://arxiv.org/abs/1911.01727).
 
@@ -30,4 +30,5 @@ We compared our CenterTrack results in terms of accuracy and speed with their re
   <img width="600" height="350" src="https://github.com/hafizas101/centertrack_wami/blob/master/result_2.png">
 </p>
 
-Results demonstrate that CenterTrack trained model achieves similar results at almost 10 times faster.
+**Results demonstrate that CenterTrack trained model achieves similar results at almost 10 times faster.
+**
