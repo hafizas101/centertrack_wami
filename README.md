@@ -27,5 +27,5 @@ We compared our CenterTrack results in terms of accuracy and speed with their re
 </p>
 
 <p align="center">
-  <img width="600" height="350" src="https://github.com/hafizas101/centertrack_wami/blob/master/result_2.png">
+  <img width="600" height="350" src="https://github.com/hafizas101/centertrack_wami/blob/master/result_2.PNG">
 </p>
