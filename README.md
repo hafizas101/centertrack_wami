@@ -23,7 +23,7 @@ Final testing results of Avg. Precision, Avg. Recall and F1 score are generated 
 ## Results
 We compared our CenterTrack results in terms of accuracy and speed with their results. Comparison of accuracy is done with their [MATLAB repository](https://github.com/zhouyifan233/MovingObjDetector-WAMI.matlab) and speed with their [Python repository](https://github.com/zhouyifan233/MovingObjDetector-WAMI.python). The results are shown in the below figures.
 <p align="center">
-  <img width="600" height="350" src="https://github.com/hafizas101/centertrack_wami/blob/master/result_1.png">
+  <img width="600" height="350" src="https://github.com/hafizas101/centertrack_wami/blob/master/result_f1.png">
 </p>
 
 <p align="center">
